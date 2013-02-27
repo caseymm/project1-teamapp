@@ -1,7 +1,7 @@
 [
     {
         "pk": 1,
-        "model": "team.Player",
+        "model": "team.Basketball",
         "fields": {
             "name": "James, Joel",
             "image": "project1/static_media/img/James.jpg",
@@ -21,9 +21,10 @@
     
     {
         "pk": 2,
-        "model": "team.Player",
+        "model": "team.Basketball",
         "fields": {
             "name": "Strickland, Dexter",
+            "image": "project1/static_media/img/Strickland.jpg",
             "number": "1",
             "position": "Guard",
             "height": "6-3",
@@ -32,7 +33,7 @@
             "hometown": "Rahway, N.J.",
             "school": "St. Patrick",
             "major": "Communication Studies",
-            "about": "Medically cleared to resume all basketball activities on August 27, 2012, after undergoing surgery on his right anterior cruciate ligament in February. Has started 59 of 92 games. Scored 617 points (6.7 per game) and has 192 assists. Has played at both guard slots in his career ? primarily at the point as a freshman and the two-guard as the start of his sophomore season, but began to see more action at the point in the last 16 games in 2010-11. Started his junior year at the off-guard spot but played about six to eight minutes a game as the primary ball handler. Has scored in double figures 22 times (six times in 2011-12) with a career-high 19 against William and Mary in Dec. 2010.",
+            "about": "Medically cleared to resume all basketball activities on August 27, 2012, after undergoing surgery on his right anterior cruciate ligament in February. Has started 59 of 92 games. Scored 617 points (6.7 per game) and has 192 assists. Has played at both guard slots in his career primarily at the point as a freshman and the two-guard as the start of his sophomore season, but began to see more action at the point in the last 16 games in 2010-11. Started his junior year at the off-guard spot but played about six to eight minutes a game as the primary ball handler. Has scored in double figures 22 times (six times in 2011-12) with a career-high 19 against William and Mary in Dec. 2010.",
             "personal":" Son of Dexter L. and Sheronne Strickland. Born Dexter Terrez Strickland on Oct. 1, 1990, in Newark, N.J. Majoring in communication studies."
             
         }
@@ -40,9 +41,10 @@
     
     {
         "pk": 3,
-        "model": "team.Player",
+        "model": "team.Basketball",
         "fields": {
             "name": "McDonald, Leslie",
+            "image": "project1/static_media/img/McDonald.jpg",
             "number": "2",
             "position": "Guard",
             "height": "6-5",
@@ -59,9 +61,10 @@
     
     {
         "pk": 4,
-        "model": "team.Player",
+        "model": "team.Basketball",
         "fields": {
             "name": "Moody, Wade",
+            "image": "project1/static_media/img/Moody.jpg",
             "number": "3",
             "position": "Guard",
             "height": "6-0",
@@ -78,9 +81,10 @@
     
     {
         "pk": 5,
-        "model": "team.Player",
+        "model": "team.Basketball",
         "fields": {
             "name": "Davis, Luke",
+            "image": "project1/static_media/img/Davis.jpg",
             "number": "4",
             "position": "Guard",
             "height": "6-0",
@@ -97,9 +101,10 @@
     
     {
         "pk": 6,
-        "model": "team.Player",
+        "model": "team.Basketball",
         "fields": {
             "name": "Paige, Marcus",
+            "image": "project1/static_media/img/Paige.jpg",
             "number": "5",
             "position": "Guard",
             "height": "6-.5",
@@ -116,9 +121,10 @@
     
     {
         "pk": 7,
-        "model": "team.Player",
+        "model": "team.Basketball",
         "fields": {
             "name": "Johnson, Brice",
+            "image": "project1/static_media/img/Johnson.jpg",
             "number": "11",
             "position": "Forward",
             "height": "6-9",
@@ -135,9 +141,10 @@
     
     {
         "pk": 8,
-        "model": "team.Player",
+        "model": "team.Basketball",
         "fields": {
             "name": "Hubert, Desmond",
+            "image": "project1/static_media/img/Hubert.jpg",
             "number": "14",
             "position": "Forward",
             "height": "6-9.5",
@@ -154,9 +161,10 @@
     
     {
         "pk": 9,
-        "model": "team.Player",
+        "model": "team.Basketball",
         "fields": {
             "name": "Hairston, P.J.",
+            "image": "project1/static_media/img/Hairston.jpg",
             "number": "15",
             "position": "Guard",
             "height": "6-5.5",
@@ -173,9 +181,10 @@
     
     {
         "pk": 10,
-        "model": "team.Player",
+        "model": "team.Basketball",
         "fields": {
             "name": "Simmons, Jackson",
+            "image": "project1/static_media/img/Simmons.jpg",
             "number": "21",
             "position": "Forward",
             "height": "6-7",
@@ -192,9 +201,10 @@
     
     {
         "pk": 11,
-        "model": "team.Player",
+        "model": "team.Basketball",
         "fields": {
             "name": "Tanner, Frank",
+            "image": "project1/static_media/img/Tanner.jpg",
             "number": "22",
             "position": "Forward",
             "height": "6-4",
@@ -211,9 +221,10 @@
     
     {
         "pk": 12,
-        "model": "team.Player",
+        "model": "team.Basketball",
         "fields": {
             "name": "Tokoto, J.P.",
+            "image": "project1/static_media/img/Tokoto.jpg",
             "number": "25",
             "position": "Forward",
             "height": "6-5",
@@ -222,7 +233,7 @@
             "hometown": "Menomonee Falls, Wisc.",
             "school": "Menomonee Falls",
             "major": "Undeclared",
-            "about": "Played for coach Dan Leffel at Menomonee Falls High School. Three-time first-team all-state selection. Two-time team captain. Averaged 24.6 points, 11.5 rebounds, 3.5 assists and 2.6 steals as a senior. Set a dozen school records, including career scoring (mark that had been held for the previous 19 seasons), rebounding and steals. Career stats included 1,737 points and 1,014 rebounds. Set the school?s single-game record with 48 points against Catholic Memorial. Averaged 21.2 points, 13.2 rebounds, 3.2 steals and 2.1 assists as a junior and earned Greater Metro Conference Player of the Year honors. Won the 2012 American Family Insurance Slam Dunk contest in New Orleans.",
+            "about": "Played for coach Dan Leffel at Menomonee Falls High School. Three-time first-team all-state selection. Two-time team captain. Averaged 24.6 points, 11.5 rebounds, 3.5 assists and 2.6 steals as a senior. Set a dozen school records, including career scoring (mark that had been held for the previous 19 seasons), rebounding and steals. Career stats included 1,737 points and 1,014 rebounds. Set the school's single-game record with 48 points against Catholic Memorial. Averaged 21.2 points, 13.2 rebounds, 3.2 steals and 2.1 assists as a junior and earned Greater Metro Conference Player of the Year honors. Won the 2012 American Family Insurance Slam Dunk contest in New Orleans.",
             "personal":" Born Jean-Pierre Tokoto on September 15, 1993, in Rockford, Ill. His parents are Trevor and Laurence Trimble. Played soccer until age 13, when he first began to play basketball. His grandfather, J.P. Tokoto, played for the Cameroon national soccer team. Undeclared major. "
             
         }
@@ -230,9 +241,10 @@
     
     {
         "pk": 13,
-        "model": "team.Player",
+        "model": "team.Basketball",
         "fields": {
             "name": "Manor, James",
+            "image": "project1/static_media/img/Manor.jpg",
             "number": "30",
             "position": "Forward",
             "height": "6-6",
@@ -249,9 +261,10 @@
     
     {
         "pk": 14,
-        "model": "team.Player",
+        "model": "team.Basketball",
         "fields": {
             "name": "Robinson, Denzel",
+            "image": "project1/static_media/img/Robinson.jpg",
             "number": "34",
             "position": "Forward",
             "height": "6-4",
@@ -268,9 +281,10 @@
     
     {
         "pk": 15,
-        "model": "team.Player",
+        "model": "team.Basketball",
         "fields": {
             "name": "Bullock, Reggie",
+            "image": "project1/static_media/img/Bullock.jpg",
             "number": "35",
             "position": "Guard",
             "height": "6-7",
@@ -279,7 +293,7 @@
             "hometown": "Kinston, N.C.",
             "school": "Kinston",
             "major": "Communication Studies",
-            "about": "Carolina?s leading returning scorer for 2012-13. Averaged 8.8 points per game last season. Led the Tar Heels in three-pointers. Named MVP of the 2012 N.C. Pro-Am summer league championship game after scoring 28 points in the title contest.",
+            "about": "Carolina's leading returning scorer for 2012-13. Averaged 8.8 points per game last season. Led the Tar Heels in three-pointers. Named MVP of the 2012 N.C. Pro-Am summer league championship game after scoring 28 points in the title contest.",
             "personal":"Reginald Ryedell Bullock is the son of Danielle Long. Born March 16, 1991, in Baltimore, Md. Majoring in communication studies. Last name is pronounced BULL-lock."
             
         }
@@ -287,9 +301,10 @@
     
     {
         "pk": 16,
-        "model": "team.Player",
+        "model": "team.Basketball",
         "fields": {
             "name": "McAdoo, James Michael",
+            "image": "project1/static_media/img/McAdoo.jpg",
             "number": "43",
             "position": "Forward",
             "height": "6-9",
@@ -298,7 +313,7 @@
             "hometown": "Norfolk, V.A.",
             "school": "Norfolk Christian",
             "major": "Undeclared",
-            "about": "Carolina?s top big man off the bench a season ago. Should become a key player, building off the late-season success and production he showed as a freshman. One of the top-rated power forwards in college basketball.",
+            "about": "Carolina's top big man off the bench a season ago. Should become a key player, building off the late-season success and production he showed as a freshman. One of the top-rated power forwards in college basketball.",
             "personal":" Born James Michael Ray McAdoo on Jan. 4, 1993, in Norfolk. Son of Ronnie and Janet McAdoo. Both parents played professional basketball overseas. His father is a member of Old Dominion University's Hall of Fame and played professionally in France, Spain and Japan. His sister played basketball at UNC Charlotte. Ronnie McAdoo is a second cousin of former Tar Heel All-America and Naismith Hall of Famer Bob McAdoo. Has yet to declare a major."
             
         }

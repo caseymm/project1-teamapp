@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class Player(models.Model):
+class Basketball(models.Model):
     name = models.CharField(unique=True, max_length=100)
     image = models.CharField(max_length=5000)
     number = models.CharField(unique=True, max_length=3)
@@ -21,7 +21,7 @@ class Player(models.Model):
 
     
     class Meta(object):
-        verbose_name_plural = "Players"
+        verbose_name_plural = "Basketball"
         #ordering = ('-date','name',)
     
     #def __unicode__(self):
@@ -31,5 +31,16 @@ class Player(models.Model):
         self.name = self.name.upper()
         super(Player, self).save(*args, **kwargs)
 
-class Basketball(models.Model):
-    players = models.ManyToManyField(Player)
+class Football(models.Model):
+    name = models.CharField(unique=True, max_length=100)
+    
+    class Meta(object):
+        verbose_name_plural = "Football"
+
+class Baseball(models.Model):
+    name = models.CharField(unique=True, max_length=100)
+    
+    class Meta(object):
+        verbose_name_plural = "Baseball"
+    
+    

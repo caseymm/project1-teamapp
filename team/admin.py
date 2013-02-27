@@ -1,14 +1,19 @@
 #!/usr/bir/env python
 
 from django.contrib import admin
-from team.models import Player, Basketball
+from team.models import Football, Basketball, Baseball
 
 class BasketballAdmin(admin.ModelAdmin):
     search_fields = ('name',)
 
 admin.site.register(Basketball, BasketballAdmin)
 
-class PlayerAdmin(admin.ModelAdmin):
+class FootballAdmin(admin.ModelAdmin):
     search_fields = ('name',),
     
-admin.site.register(Player, PlayerAdmin)
+admin.site.register(Football, FootballAdmin)
+
+class BaseballAdmin(admin.ModelAdmin):
+    search_fields = ('name',),
+    
+admin.site.register(Baseball, BaseballAdmin)
