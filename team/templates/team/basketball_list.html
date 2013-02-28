@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>All Players</h2>
+    <ul>
+        {% for player in players %}
+        {# Each "player" is a Basketball model object. #}
+        <li><a href="{{player.id}}">{{ player.name}}</a> | {{player.number}} <img src="{{player.image}}"></li>
+        {% endfor %}
+    </ul>
+
+<div class="pagination">
+    <span class="step-links">
+        {% if players.has_previous %}
+            <a href="?page={{ players.previous_page_number }}">previous</a>
+            {% endif %}
+            
+            <span class="current">
+                Page {{ players.number }} of {{players.paginator.num_pages }}
+            </span>
+            
+            {% if students.has_next %}
+                <a href="?page={{ players.next_page_number }}">next</a>
+            {% endif %}
+    </span>
+</div>
+{% endblock %}

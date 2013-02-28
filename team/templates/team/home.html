@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+    
+{% extends "base.html" %}
+{% load humanize %}
+{% load url from future %}
+
+{% block content %}
+    <h1>Sports Teams</h1>
+    <p>The number of players on the basketball team is {{ player_count|intcomma }}.</p>
+    <p><a href="{% url 'team_basketball_list' %}">List of players on the basketball team.</a></p>
+    
+{% endblock %}
