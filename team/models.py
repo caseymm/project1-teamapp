@@ -17,7 +17,7 @@ class Basketball(models.Model):
     personal = models.CharField(max_length=5000)
     
     def __unicode__(self):
-        return U'%s %s' %(self.number, self.name)
+        return U'%s %s' %(self.number, self.name, self.image)
 
     
     class Meta(object):
@@ -29,7 +29,7 @@ class Basketball(models.Model):
     
     def save(self, *args, **kwargs):
         self.name = self.name.upper()
-        super(Player, self).save(*args, **kwargs)
+        super(player, self).save(*args, **kwargs)
 
 class Football(models.Model):
     name = models.CharField(unique=True, max_length=100)
