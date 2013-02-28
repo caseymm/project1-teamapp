@@ -4,7 +4,7 @@
         "model": "team.Basketball",
         "fields": {
             "name": "James, Joel",
-            "image": "project1/static_media/img/James.jpg",
+            "image": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/OL/OLPTEGCLTOYLPKB.20120829180406.jpg",
             "number": "0",
             "position": "Forward",
             "height": "6-10",
@@ -24,7 +24,7 @@
         "model": "team.Basketball",
         "fields": {
             "name": "Strickland, Dexter",
-            "image": "project1/static_media/img/Strickland.jpg",
+            "image": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/QW/QWEMKTTTVFYZDRF.20120829180406.jpg",
             "number": "1",
             "position": "Guard",
             "height": "6-3",
@@ -44,7 +44,7 @@
         "model": "team.Basketball",
         "fields": {
             "name": "McDonald, Leslie",
-            "image": "project1/static_media/img/McDonald.jpg",
+            "image": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/SF/SFPHRVMNAPVRNOV.20120829180406.jpg",
             "number": "2",
             "position": "Guard",
             "height": "6-5",
@@ -64,7 +64,7 @@
         "model": "team.Basketball",
         "fields": {
             "name": "Moody, Wade",
-            "image": "project1/static_media/img/Moody.jpg",
+            "image": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/ZQ/ZQKLSWRJBJFXBGL.20121030160827.jpg",
             "number": "3",
             "position": "Guard",
             "height": "6-0",
@@ -84,7 +84,7 @@
         "model": "team.Basketball",
         "fields": {
             "name": "Davis, Luke",
-            "image": "project1/static_media/img/Davis.jpg",
+            "image": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/HG/HGAPQXZWZIUPPAR.20120829180405.jpg",
             "number": "4",
             "position": "Guard",
             "height": "6-0",
@@ -104,7 +104,7 @@
         "model": "team.Basketball",
         "fields": {
             "name": "Paige, Marcus",
-            "image": "project1/static_media/img/Paige.jpg",
+            "image": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/UN/UNRNDTAWVSSJBXG.20120829180406.jpg",
             "number": "5",
             "position": "Guard",
             "height": "6-.5",
@@ -124,7 +124,7 @@
         "model": "team.Basketball",
         "fields": {
             "name": "Johnson, Brice",
-            "image": "project1/static_media/img/Johnson.jpg",
+            "image": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/BZ/BZJVKCYIJSWFEHC.20120829180406.jpg",
             "number": "11",
             "position": "Forward",
             "height": "6-9",
@@ -144,7 +144,7 @@
         "model": "team.Basketball",
         "fields": {
             "name": "Hubert, Desmond",
-            "image": "project1/static_media/img/Hubert.jpg",
+            "image": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/XM/XMDFRPSKACTQOKE.20120829180405.jpg",
             "number": "14",
             "position": "Forward",
             "height": "6-9.5",
@@ -164,7 +164,7 @@
         "model": "team.Basketball",
         "fields": {
             "name": "Hairston, P.J.",
-            "image": "project1/static_media/img/Hairston.jpg",
+            "image": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/RM/RMMSLCKRRQGODUZ.20120829180405.jpg",
             "number": "15",
             "position": "Guard",
             "height": "6-5.5",
@@ -184,7 +184,7 @@
         "model": "team.Basketball",
         "fields": {
             "name": "Simmons, Jackson",
-            "image": "project1/static_media/img/Simmons.jpg",
+            "image": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/ZJ/ZJVDJDHRWAAAWCT.20120829180406.jpg",
             "number": "21",
             "position": "Forward",
             "height": "6-7",
@@ -204,7 +204,7 @@
         "model": "team.Basketball",
         "fields": {
             "name": "Tanner, Frank",
-            "image": "project1/static_media/img/Tanner.jpg",
+            "image": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/HY/HYQGQZXWGNSKBBI.20121030160827.jpg",
             "number": "22",
             "position": "Forward",
             "height": "6-4",
@@ -224,7 +224,7 @@
         "model": "team.Basketball",
         "fields": {
             "name": "Tokoto, J.P.",
-            "image": "project1/static_media/img/Tokoto.jpg",
+            "image": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/WO/WOUYKMLWAZVLUGG.20120829180406.jpg",
             "number": "25",
             "position": "Forward",
             "height": "6-5",
@@ -244,7 +244,7 @@
         "model": "team.Basketball",
         "fields": {
             "name": "Manor, James",
-            "image": "project1/static_media/img/Manor.jpg",
+            "image": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/ES/ESUDLCOGIZHPAPH.20121030160827.jpg",
             "number": "30",
             "position": "Forward",
             "height": "6-6",
@@ -264,7 +264,7 @@
         "model": "team.Basketball",
         "fields": {
             "name": "Robinson, Denzel",
-            "image": "project1/static_media/img/Robinson.jpg",
+            "image": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/EG/EGIVRIMMHQNYZUC.20121030160827.jpg",
             "number": "34",
             "position": "Forward",
             "height": "6-4",
@@ -284,7 +284,7 @@
         "model": "team.Basketball",
         "fields": {
             "name": "Bullock, Reggie",
-            "image": "project1/static_media/img/Bullock.jpg",
+            "image": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/WN/WNGAFGRVTXTXAMH.20120829180405.jpg",
             "number": "35",
             "position": "Guard",
             "height": "6-7",
@@ -304,7 +304,7 @@
         "model": "team.Basketball",
         "fields": {
             "name": "McAdoo, James Michael",
-            "image": "project1/static_media/img/McAdoo.jpg",
+            "image": "http://image.cdnllnwnl.xosnetwork.com/pics32/400/ID/IDEJCORHUUOOGID.20120829180406.jpg",
             "number": "43",
             "position": "Forward",
             "height": "6-9",

@@ -1,5 +1,4 @@
 # Create your views here.
-from django.shortcuts import render
 from team.models import Basketball, Football, Baseball
 from django.shortcuts import render, get_object_or_404, redirect, render_to_response
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
@@ -28,4 +27,4 @@ def basketballList(request):
         # If page is out of range (e.g. 9999), deliver last page of results
         players = paginator.page(paginator.num_pages)
     
-    return render_to_response('team/basketball_list.html', {"players": players})
+    return render(request, 'team/basketball_list.html', {"players": players})

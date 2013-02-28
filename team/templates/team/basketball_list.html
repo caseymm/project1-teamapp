@@ -5,10 +5,10 @@
     <ul>
         {% for player in players %}
         {# Each "player" is a Basketball model object. #}
-        <li><a href="{{player.id}}">{{ player.name}}</a> | {{player.number}} <img src="{{player.image}}"></li>
+        <li><a href="{{player.id}}"><img src="{{player.image}}"><br />{{ player.name}}</a> | {{player.number}} </li>
         {% endfor %}
     </ul>
-
+    
 <div class="pagination">
     <span class="step-links">
         {% if players.has_previous %}
