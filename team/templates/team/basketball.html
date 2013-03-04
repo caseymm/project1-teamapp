@@ -2,18 +2,22 @@
 
 {% block content %}
 <h2>Player: {{ player.name }} <img src="{{player.image}}"></h2>
-<p>Details</p>
+<p>Details about {{ player.first }}</p>
 <ul>
-    <li>{{ player.number }}</li>
-    <li>{{ player.position }}</li>
-    <li>{{ player.height }}</li>
-    <li>{{ player.weight }}</li>
-    <li>{{ player.year }}</li>
-    <li>{{ player.hometown }}</li>
-    <li>{{ player.school }}</li>
-    <li>{{ player.major }}</li>
-    <li>{{ player.about }}</li>
-    <li>{{ player.personal }}</li>
+    <li>Jersey Number: {{ player.number }}</li>
+    <li>Position: {{ player.position }}</li>
+    <li>Height: {{ player.height }}</li>
+    <li>Weight: {{ player.weight }}</li>
+    <li>Year: {{ player.year }}</li>
+    <li>Hometown: {{ player.hometown }}</li>
+    <li>High School: {{ player.school }}</li>
+    <li>Major: {{ player.major }}</li>
+    <li>About: {{ player.about }}</li>
+    <li>Personal Information: {{ player.personal }}</li>
     
 </ul>
+
+<a class="twitter-timeline" href="https://twitter.com/{{ player.twitter }}" data-widget-id="308376349284900864">Tweets by {{ player.first }}</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
 {% endblock %}

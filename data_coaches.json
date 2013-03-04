@@ -1,0 +1,56 @@
+[
+    {
+        "pk": 1,
+        "model": "team.Coach",
+        "fields": {
+            "name": "Roy Williams",
+            "position": "Head Coach",
+            "experience": "10",
+            "hometown": "Asheville, N.C.",
+        }
+    },
+    
+    {
+        "pk": 2,
+        "model": "team.Coach",
+        "fields": {
+            "name": "Hubert Davis",
+            "position": "Assistant Coach",
+            "experience": "1",
+            "hometown": "Winston-Salem, N.C.",
+        }
+    },
+    
+    {
+        "pk": 3,
+        "model": "team.Coach",
+        "fields": {
+            "name": "C.B. McGrath",
+            "position": "Assistant Coach",
+            "experience": "10",
+            "hometown": "Indianapolis, Ind.",
+        }
+    },
+    
+    {
+        "pk": 4,
+        "model": "team.Coach",
+        "fields": {
+            "name": "Steve Robinson",
+            "position": "Assistant Coach",
+            "experience": "10",
+            "hometown": "Roanoke, V.A.",
+        }
+    },
+    
+    {
+        "pk": 1,
+        "model": "team.Coach",
+        "fields": {
+            "name": "Joe Holladay",
+            "position": "Director of Basketball Operations",
+            "experience": "10",
+            "hometown": "Charlotte, N.C.",
+        }
+    },
+]

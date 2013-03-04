@@ -4,7 +4,9 @@ from django.db import models
 
 class Basketball(models.Model):
     name = models.CharField(unique=True, max_length=100)
+    first = models.CharField(max_length=100)
     image = models.CharField(max_length=5000)
+    twitter = models.CharField(max_length=5000)
     number = models.CharField(unique=True, max_length=3)
     position = models.CharField(max_length=10)
     height = models.CharField(max_length=10)

@@ -9,9 +9,9 @@ def home(request):
     }
     return render(request, "team/home.html", context)
 
-def basketball(request):
+def basketball(request, pk):
     #basketball = Basketball.objects.order_by('?')[0]
-    basketball = get_object_or_404(Basketball, id=pk)
+    player = get_object_or_404(Basketball, id=pk)
     return render(request, "team/basketball.html", {'player': player})
 
 def basketballList(request):
