@@ -1,13 +1,43 @@
 {% extends "base.html" %}
+{% load humanize %}
+{% load url from future %}
 
 {% block content %}
-    <h2>All Players</h2>
-    <ul>
-        {% for player in players %}
+<div class="shadow">  
+    <img src="http://caseymmiller.com/j583/Project1/images/team.JPG">
+</div>
+    <div class="background">
+    <h2>Men's Basketball Roster</h2>
+    <table class="table table-hover">
+        
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Position</th>
+                  <th>Year</th>
+                  <th>Hometown</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for player in players %}
         {# Each "player" is a Basketball model object. #}
-        <li><a href="{{player.id}}"><img src="{{player.image}}"><br />{{ player.name}}</a> | {{player.number}} </li>
-        {% endfor %}
-    </ul>
+                
+                <tr>
+                    
+                  <td>{{ player.number }}</td>
+                  <td><a href="{{player.id}}">{{ player.name }}</a></td>
+                  <td>{{ player.position }}</td>
+                  <td>{{ player.year }}</td>
+                  <td>{{ player.hometown }}</td>
+                    
+                </tr>
+                
+                {% endfor %}
+              </tbody>
+            </table>
+    </div>
+    
     
 <div class="pagination">
     <span class="step-links">
@@ -24,4 +54,6 @@
             {% endif %}
     </span>
 </div>
+
+
 {% endblock %}

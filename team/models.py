@@ -33,6 +33,26 @@ class Basketball(models.Model):
         self.name = self.name.upper()
         super(player, self).save(*args, **kwargs)
 
+
+class Coach(models.Model):
+    name = models.CharField(unique=True, max_length=100)
+    position = models.CharField(max_length=100)
+    experience = models.CharField(max_length=5000)
+    hometown = models.CharField(max_length=5000)
+
+    
+    def __unicode__(self):
+        return U'%s %s' %(self.name)
+
+    
+    class Meta(object):
+        verbose_name_plural = "Coaches"
+        #ordering = ('-date','name',)
+    
+    def save(self, *args, **kwargs):
+        self.name = self.name.upper()
+        super(coach, self).save(*args, **kwargs)
+
 class Football(models.Model):
     name = models.CharField(unique=True, max_length=100)
     
@@ -44,5 +64,7 @@ class Baseball(models.Model):
     
     class Meta(object):
         verbose_name_plural = "Baseball"
+
+
     
     

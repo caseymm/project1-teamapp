@@ -1,23 +1,77 @@
 {% extends "base.html" %}
+{% load humanize %}
+{% load url from future %}
 
 {% block content %}
-<h2>Player: {{ player.name }} <img src="{{player.image}}"></h2>
-<p>Details about {{ player.first }}</p>
-<ul>
-    <li>Jersey Number: {{ player.number }}</li>
-    <li>Position: {{ player.position }}</li>
-    <li>Height: {{ player.height }}</li>
-    <li>Weight: {{ player.weight }}</li>
-    <li>Year: {{ player.year }}</li>
-    <li>Hometown: {{ player.hometown }}</li>
-    <li>High School: {{ player.school }}</li>
-    <li>Major: {{ player.major }}</li>
-    <li>About: {{ player.about }}</li>
-    <li>Personal Information: {{ player.personal }}</li>
-    
-</ul>
 
-<a class="twitter-timeline" href="https://twitter.com/{{ player.twitter }}" data-widget-id="308376349284900864">Tweets by {{ player.first }}</a>
+<div class="row">
+    <div class="span8">
+        <div class="background">
+       
+         <table class="table table-condensed">
+        
+              <thead>
+                <tr>
+                  <th><h1>#{{player.number}}</h1></th>
+                  <th><h1>{{ player.first }}</h1></th>
+                </tr>
+              </thead>
+              <tbody>
+                  <td><b>Position</b></td>
+                  <td>{{ player.position }}</td>
+                </tr>
+                <tr>
+                  <td><b>Height</b></td>
+                  <td>{{ player.height }}</td>
+                </tr>
+                <tr>
+                  <td><b>Weight</b></td>
+                  <td>{{ player.weight }}</td>
+                </tr>
+                <tr>
+                  <td><b>Year</b></td>
+                  <td>{{ player.year }}</td>
+                </tr>
+                <tr>
+                  <td><b>Major</b></td>
+                  <td>{{ player.major }}</td>
+                </tr>
+                <tr>
+                  <td><b>Hometown</b></td>
+                  <td>{{ player.hometown }}</td>
+                </tr>
+                <tr>
+                  <td><b>High School</b></td>
+                  <td>{{ player.school }}</td>
+                </tr>
+                <tr>
+                  <td><b>About</b></td>
+                  <td>{{ player.about }}</td>
+                </tr>
+                <tr>
+                  <td><b>Personal Information</b></td>
+                  <td>{{ player.personal }}</td>
+                </tr>
+                
+              </tbody>
+            </table>
+        </div>
+        
+    </div>
+    <div class="span4">
+        <img src="{{player.image}}" class="img-polaroid">
+    </div>
+</div>
+
+<div class="row">
+    <div class="span8">
+        
+    </div>
+    <div class="span4">
+        <a class="twitter-timeline" href="https://twitter.com/{{ player.twitter }}" data-widget-id="308376349284900864">Tweets by {{ player.first }}</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+</div>
+
 
 {% endblock %}

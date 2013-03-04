@@ -8,6 +8,27 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
+
+.background{
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #f9f9f9;
+  opacity: .88;
+  -moz-border-radius: 4px;
+	border-radius: 4px;
+	border:1px;
+	border-style:solid;
+	border-color: #ffffff;
+  -webkit-box-shadow: 2px 2px 4px 1px #666666;
+	box-shadow: 2px 2px 4px 1px #666666;
+}
+
+.shadow{
+  -webkit-box-shadow: 2px 3px 5px 1px #666666;
+	box-shadow: 2px 3px 5px 1px #666666;
+  margin-bottom: 20px;
+}
+
 .clearfix {
   *zoom: 1;
 }
@@ -227,18 +248,18 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #ffffff;
+  background: url("http://www.sportsgeekery.com/wp-content/uploads/2011/02/unc-wp-14-1920.jpg") center;
+  width: 100%;
 }
 
 a {
-  color: #0088cc;
+  color: #032D5C;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #005580;
-  text-decoration: underline;
+  color: #ffffff;
 }
 
 .img-rounded {
@@ -290,6 +311,8 @@ a:focus {
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
   width: 940px;
+  /*background: #ffffff;
+  opacity: .7;*/
 }
 
 .span12 {
@@ -805,8 +828,8 @@ h4 small {
 
 .page-header {
   padding-bottom: 9px;
-  margin: 20px 0 30px;
-  border-bottom: 1px solid #eeeeee;
+  margin: 20px 0 20px;
+  /*border-bottom: 1px solid #eeeeee;*/
 }
 
 ul,
@@ -2140,12 +2163,13 @@ table {
 
 .table-striped tbody > tr:nth-child(odd) > td,
 .table-striped tbody > tr:nth-child(odd) > th {
-  background-color: #f9f9f9;
+  background-color: #56A0D3;
+  opacity: .7;
 }
 
 .table-hover tbody tr:hover > td,
 .table-hover tbody tr:hover > th {
-  background-color: #f5f5f5;
+  background-color: #AFE1FA;
 }
 
 table td[class*="span"],
@@ -4502,7 +4526,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-search {
   position: relative;
-  float: left;
+  float: right;
   margin-top: 5px;
   margin-bottom: 0;
 }
