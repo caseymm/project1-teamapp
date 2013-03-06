@@ -1,7 +1,8 @@
 # Create your views here.
-from team.models import Basketball, Football, Baseball #Coach
+from team.models import Basketball, Football, Baseball, Coach
 from django.shortcuts import render, get_object_or_404, redirect, render_to_response
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+#from chartit import PivotDataPool, PivotChart
 
 def home(request):
     context = {
@@ -10,42 +11,37 @@ def home(request):
     return render(request, "team/home.html", context)
 
 def basketball(request, pk):
-    #basketball = Basketball.objects.order_by('?')[0]
     player = get_object_or_404(Basketball, id=pk)
-    return render(request, "team/basketball.html", {'player': player})
+    coach = get_object_or_404(Coach, id=pk)
+    context = {
+        'player': player,
+        'coach': coach,
+    }
+    return render(request, "team/basketball.html", context)
+    
 
 def basketballList(request):
     basketball_list = Basketball.objects.all()
+    coaches = Coach.objects.all()
     paginator = Paginator(basketball_list, 25)
     page = request.GET.get('page')
     try:
         players = paginator.page(page)
     except PageNotAnInteger:
-        # If page is not an integer, deliver first page
+         #If page is not an integer, deliver first page
         players = paginator.page(1)
         
     except EmptyPage:
-        # If page is out of range (e.g. 9999), deliver last page of results
+        #If page is out of range (e.g. 9999), deliver last page of results
         players = paginator.page(paginator.num_pages)
-    
-    return render(request, 'team/basketball_list.html', {"players": players})
 
-#def coaches(request, pk):
-    #basketball = Basketball.objects.order_by('?')[0]
- #   coach = get_object_or_404(Coach, id=pk)
-  #  return render(request, "team/basketball.html", {'coach': coach})
-
-#def coachList(request):
- #   coach_list = Coach.objects.all()
-  #  paginator = Paginator(coach_list, 25)
-   # page = request.GET.get('page')
-    #try:
-     #   coaches = paginator.page(page)
-    #except PageNotAnInteger:
-        # If page is not an integer, deliver first page
-     #   coaches = paginator.page(1)
-    #except EmptyPage:
-        # If page is out of range (e.g. 9999), deliver last page of results
-     #   coaches = paginator.page(paginator.num_pages)
     
-    #return render(request, 'team/basketball_list.html', {"coaches": coaches})
+    context = {
+        'players': players,
+        'coaches': coaches,
+    }
+    
+    return render(request, 'team/basketball_list.html', context)
+
+
+

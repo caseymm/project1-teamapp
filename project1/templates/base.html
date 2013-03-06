@@ -6,8 +6,9 @@
 <html lang=en>
 <head>
     <title>{% block title %}Project 1{% endblock %}</title>
-    <link href="{{STATIC_URL }}css/bootstrap.css" rel="stylesheet">
-    <link href="{{STATIC_URL }}css/bootstrapresponsive.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/bootstrapresponsive.css" rel="stylesheet">
+        
 </head>
 
 <body>
@@ -51,23 +52,36 @@
                       </ul>
                     </li>
                     
-                   
-                    <form class="navbar-search" action="">
-                      <input type="text" class="search-query span2" placeholder="Search">
-                    </form>
+                    </ul>
                     
+                    <!--<a class="brand" href="{% url 'team_home' %}"></a>-->
+                   <div class="pull-right">
+                    <form class="navbar-search pull-right">
+                      <input type="text" class="search-query span3" placeholder="Search">
+                    </form>
+                    </div>
                     
                             
-                        </ul>
+                        
                 </div>
             </div>
 </div>
         {% block content %}
            
         {% endblock %}
+        <div class="row">
+            <div class="span12">
+                <div class="footer">
+                    <!--<a href="#">About</a>-->
+                    <p>2013 UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL</p>
+                </div>
+            </div>
+        </div>
     </div>
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+    <script src="http://platform.twitter.com/widgets.js"></script>
+    
 </body>
 </html>

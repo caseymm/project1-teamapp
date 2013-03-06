@@ -9,6 +9,26 @@
  */
 
 
+.footer{
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: -12px;
+  padding: 10px 10px 5px 10px;
+  background-color: #11294F;
+  opacity: .88;
+  -moz-border-radius: 4px;
+	border-radius: 4px;
+	border:1px;
+	border-style:solid;
+	border-color: #11294F;
+  -webkit-box-shadow: 2px 2px 4px 1px #666666;
+	box-shadow: 2px 2px 4px 1px #666666;
+}
+
+a:footer{
+  color: #ffffff;
+}
+
 .background{
   padding-left: 10px;
   padding-right: 10px;
@@ -1113,7 +1133,8 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-  display: inline-block;
+  display: relative;
+  float: right;
   height: 20px;
   padding: 4px 6px;
   margin-bottom: 10px;
@@ -1336,7 +1357,7 @@ textarea[class*="span"],
 .row-fluid select[class*="span"],
 .row-fluid textarea[class*="span"],
 .row-fluid .uneditable-input[class*="span"] {
-  float: none;
+  float: right;
   margin-left: 0;
 }
 

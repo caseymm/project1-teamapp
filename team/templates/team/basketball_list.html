@@ -20,7 +20,7 @@
                 </tr>
               </thead>
               <tbody>
-                {% for player in players %}
+        {% for player in players %}
         {# Each "player" is a Basketball model object. #}
                 
                 <tr>
@@ -33,13 +33,45 @@
                     
                 </tr>
                 
-                {% endfor %}
+        {% endfor %}
+              </tbody>
+            </table>
+    </div>
+    <br />
+    
+
+<div class="background">
+    <h2>Men's Basketball Coaches</h2>
+    <table class="table table-hover">
+        
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Position</th>
+                  <th>Year</th>
+                  <th>Hometown</th>
+                </tr>
+              </thead>
+              <tbody>
+                    
+        {% for coach in coaches %}
+        {# Each "coach" is a Coach model object. #}
+                
+                <tr>
+                    <div class="tooltip">
+                  <td><a href="#" data-toggle="tooltip" title="first tooltip">{{ coach.name }}</a></td>
+                  <td>{{ coach.position }}</td>
+                  <td>{{ coach.experience }}</td>
+                  <td>{{ coach.hometown }}</td>
+                    </div>
+                </tr>
+                
+        {% endfor %}
               </tbody>
             </table>
     </div>
     
-    
-<div class="pagination">
+<!--<div class="pagination">
     <span class="step-links">
         {% if players.has_previous %}
             <a href="?page={{ players.previous_page_number }}">previous</a>
@@ -53,7 +85,7 @@
                 <a href="?page={{ players.next_page_number }}">next</a>
             {% endif %}
     </span>
-</div>
+</div>-->
 
 
 {% endblock %}
