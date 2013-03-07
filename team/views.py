@@ -1,5 +1,5 @@
 # Create your views here.
-from team.models import Basketball, Football, Baseball, Coach# Score
+from team.models import Basketball, Football, Baseball, Coach
 from django.shortcuts import render, get_object_or_404, redirect, render_to_response
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 #from chartit import PivotDataPool, PivotChart

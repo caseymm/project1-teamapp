@@ -62,12 +62,12 @@
         {# Each "coach" is a Coach model object. #}
                 
                 <tr>
-                    <div class="tooltip">
+                  
                   <td>{{ coach.name }}</td>
                   <td>{{ coach.position }}</td>
                   <td>{{ coach.experience }}</td>
                   <td>{{ coach.hometown }}</td>
-                    </div>
+                    
                 </tr>
                 
         {% endfor %}
@@ -82,21 +82,7 @@
     
           </div>
 </div>    
-<!--<div class="pagination">
-    <span class="step-links">
-        {% if players.has_previous %}
-            <a href="?page={{ players.previous_page_number }}">previous</a>
-            {% endif %}
-            
-            <span class="current">
-                Page {{ players.number }} of {{players.paginator.num_pages }}
-            </span>
-            
-            {% if students.has_next %}
-                <a href="?page={{ players.next_page_number }}">next</a>
-            {% endif %}
-    </span>
-</div>-->
+
 
 
 {% endblock %}

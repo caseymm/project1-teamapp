@@ -18,12 +18,9 @@ class Basketball(models.Model):
     major = models.CharField(max_length=50)
     about = models.CharField(max_length=5000)
     personal = models.CharField(max_length=5000)
+    youtube = models.CharField(max_length=5000)
     
-    week1 = models.IntegerField()
-    week2 = models.IntegerField()
-    week3 = models.IntegerField()
-    week4 = models.IntegerField()
-    week5 = models.IntegerField()
+    
     
     def __unicode__(self):
         return U'%s %s' %(self.number, self.name, self.image)
