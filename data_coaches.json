@@ -5,7 +5,7 @@
         "fields": {
             "name": "Roy Williams",
             "position": "Head Coach",
-            "experience": "10",
+            "experience": "10 yrs",
             "hometown": "Asheville, N.C."
         }
     },
@@ -16,7 +16,7 @@
         "fields": {
             "name": "Hubert Davis",
             "position": "Assistant Coach",
-            "experience": "1",
+            "experience": "1 yr",
             "hometown": "Winston-Salem, N.C."
         }
     },
@@ -27,7 +27,7 @@
         "fields": {
             "name": "C.B. McGrath",
             "position": "Assistant Coach",
-            "experience": "10",
+            "experience": "10 yrs",
             "hometown": "Indianapolis, Ind."
         }
     },
@@ -38,7 +38,7 @@
         "fields": {
             "name": "Steve Robinson",
             "position": "Assistant Coach",
-            "experience": "10",
+            "experience": "10 yrs",
             "hometown": "Roanoke, V.A."
         }
     },
@@ -49,7 +49,7 @@
         "fields": {
             "name": "Joe Holladay",
             "position": "Director of Basketball Operations",
-            "experience": "10",
+            "experience": "10 yrs",
             "hometown": "Charlotte, N.C."
         }
     }

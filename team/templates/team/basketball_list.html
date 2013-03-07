@@ -3,9 +3,13 @@
 {% load url from future %}
 
 {% block content %}
+<div class="row">
+      <div class="span12">    
 <div class="shadow">  
     <img src="http://caseymmiller.com/j583/Project1/images/team.JPG">
 </div>
+      </div>
+          <div class="span8">
     <div class="background">
     <h2>Men's Basketball Roster</h2>
     <table class="table table-hover">
@@ -48,7 +52,7 @@
                 <tr>
                   <th>Name</th>
                   <th>Position</th>
-                  <th>Year</th>
+                  <th>Exp.</th>
                   <th>Hometown</th>
                 </tr>
               </thead>
@@ -59,7 +63,7 @@
                 
                 <tr>
                     <div class="tooltip">
-                  <td><a href="#" data-toggle="tooltip" title="first tooltip">{{ coach.name }}</a></td>
+                  <td>{{ coach.name }}</td>
                   <td>{{ coach.position }}</td>
                   <td>{{ coach.experience }}</td>
                   <td>{{ coach.hometown }}</td>
@@ -70,7 +74,14 @@
               </tbody>
             </table>
     </div>
+          </div>
+          
+          <div class="span4">
+                    <a class="twitter-timeline" href="https://twitter.com/unc_basketball" data-widget-id="308376349284900864">Tweets by @UNC_Basketball</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     
+          </div>
+</div>    
 <!--<div class="pagination">
     <span class="step-links">
         {% if players.has_previous %}

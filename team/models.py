@@ -60,7 +60,26 @@ class Coach(models.Model):
         self.name = self.name.upper()
         super(coach, self).save(*args, **kwargs)
         
-        
+
+#class Score(models.Model):
+  #  sport = models.CharField(unique=True, max_length=100)
+   # home = models.CharField(max_length=100)
+    #away = models.CharField(max_length=5000)
+    #homescore = models.CharField(max_length=5000)
+    #awayscore = models.CharField(max_length=5000)
+
+    
+    #def __unicode__(self):
+     #   return U'%s %s' %(self.name)
+
+    
+    #class Meta(object):
+     #   verbose_name_plural = "Scores"
+        #ordering = ('-date','name',)
+    
+    #def save(self, *args, **kwargs):
+     #   self.name = self.name.upper()
+      #  super(score, self).save(*args, **kwargs)   
         
         
         

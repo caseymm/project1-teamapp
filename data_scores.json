@@ -1,0 +1,61 @@
+[
+    {
+        "pk": 1,
+        "model": "team.Score",
+        "fields": {
+            "sport": "Men's Basketball",
+            "home": "Carolina",
+            "away": "Maryland",
+            "homescore": "73",
+            "awayscore": "65"
+        }
+    },
+    
+    {
+        "pk": 2,
+        "model": "team.Score",
+        "fields": {
+            "sport": "Men's Tennis",
+            "home": "FSU",
+            "away": "Carolina",
+            "homescore": "1",
+            "awayscore": "5"
+        }
+    },
+    
+    {
+        "pk": 3,
+        "model": "team.Score",
+        "fields": {
+            "sport": "Women's Basketball",
+            "home": "Carolina",
+            "away": "Duke",
+            "homescore": "78",
+            "awayscore": "62"
+        }
+    },
+    
+    {
+        "pk": 4,
+        "model": "team.Score",
+        "fields": {
+            "sport": "Baseball",
+            "home": "Texas A&M",
+            "away": "Carolina",
+            "homescore": "2",
+            "awayscore": "14"
+        }
+    },
+    
+    {
+        "pk": 5,
+        "model": "team.Score",
+        "fields": {
+            "sport": "Softball",
+            "home": "Binghamton",
+            "away": "Carolina",
+            "homescore": "4",
+            "awayscore": "7"
+        }
+    }
+]
