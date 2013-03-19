@@ -8,6 +8,7 @@ class Basketball(models.Model):
     first = models.CharField(max_length=100)
     image = models.CharField(max_length=5000)
     twitter = models.CharField(max_length=5000)
+    twitterKey = models.CharField(max_length=5000)
     number = models.CharField(unique=True, max_length=3)
     position = models.CharField(max_length=10)
     height = models.CharField(max_length=10)
@@ -23,7 +24,7 @@ class Basketball(models.Model):
     
     
     def __unicode__(self):
-        return U'%s %s' %(self.number, self.name, self.image)
+        return U'%s %s' %(self.number, self.name)
 
     
     class Meta(object):
@@ -56,29 +57,6 @@ class Coach(models.Model):
     def save(self, *args, **kwargs):
         self.name = self.name.upper()
         super(coach, self).save(*args, **kwargs)
-        
-
-#class Score(models.Model):
-  #  sport = models.CharField(unique=True, max_length=100)
-   # home = models.CharField(max_length=100)
-    #away = models.CharField(max_length=5000)
-    #homescore = models.CharField(max_length=5000)
-    #awayscore = models.CharField(max_length=5000)
-
-    
-    #def __unicode__(self):
-     #   return U'%s %s' %(self.name)
-
-    
-    #class Meta(object):
-     #   verbose_name_plural = "Scores"
-        #ordering = ('-date','name',)
-    
-    #def save(self, *args, **kwargs):
-     #   self.name = self.name.upper()
-      #  super(score, self).save(*args, **kwargs)   
-        
-        
         
 
 class Football(models.Model):

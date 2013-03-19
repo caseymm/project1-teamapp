@@ -79,6 +79,19 @@ a:footer{
 	box-shadow: 2px 2px 4px 1px #666666;
 }
 
+.backgroundW{
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #fff;
+  -moz-border-radius: 4px;
+	border-radius: 4px;
+	border:1px;
+	border-style:solid;
+	border-color: #ffffff;
+  -webkit-box-shadow: 2px 2px 4px 1px #666666;
+	box-shadow: 2px 2px 4px 1px #666666;
+}
+
 .background2{
   overflow: auto;
   height: 427px;

@@ -12,7 +12,14 @@ def home(request):
 
 def basketball(request, pk):
     player = get_object_or_404(Basketball, id=pk)
-    coach = get_object_or_404(Coach, id=pk)
+    coaches = Coach.objects.all()
+    coach_count = len(coaches)
+    if pk <= coach_count:
+        coach = get_object_or_404(Coach, id=pk)
+    else:
+        coach = ""
+        
+        
     context = {
         'player': player,
         'coach': coach,
