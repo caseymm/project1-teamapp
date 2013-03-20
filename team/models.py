@@ -59,17 +59,7 @@ class Coach(models.Model):
         super(coach, self).save(*args, **kwargs)
         
 
-class Football(models.Model):
-    name = models.CharField(unique=True, max_length=100)
-    
-    class Meta(object):
-        verbose_name_plural = "Football"
 
-class Baseball(models.Model):
-    name = models.CharField(unique=True, max_length=100)
-    
-    class Meta(object):
-        verbose_name_plural = "Baseball"
 
 
     
